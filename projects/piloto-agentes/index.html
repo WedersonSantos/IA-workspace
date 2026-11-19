@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Piloto de agentes — colaboração com propósito</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Piloto de agentes, início">Piloto<span> de agentes</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" hidden><span aria-hidden="true">☰</span> Menu</button>
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a><a href="#recursos">Recursos</a><a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Boas ideias crescem com trabalho em equipe.</h1>
+          <p>Um laboratório de colaboração entre agentes: cada papel tem seu momento, cada entrega passa por um novo olhar.</p>
+          <a class="button" href="#recursos">Conheça os papéis</a>
+        </div>
+        <div class="hero-note">
+          <p class="note-title">Uma ideia. Três perspectivas.</p>
+          <p>O Maestro organiza.<br>O Implementador constrói.<br>O Revisor questiona.</p>
+          <p class="note-caption">Projeto demonstrativo · conteúdo fictício</p>
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="section container about">
+      <h2>Clareza antes de começar.</h2>
+      <div><p>O Piloto de agentes explora uma forma simples de organizar o trabalho: definir o objetivo, dividir responsabilidades e revisar o resultado antes de integrar.</p><p>Neste cenário fictício, os agentes colaboram em pequenas entregas locais. O processo fica registrado para que o próximo passo tenha contexto.</p></div>
+    </section>
+    <section id="recursos" class="section resources">
+      <div class="container">
+        <h2>Responsabilidades que se complementam.</h2>
+        <div class="cards">
+          <article class="card"><h3>Maestro</h3><p>Transforma o objetivo em um plano, delega tarefas e reúne as entregas. Mantém o escopo e registra as decisões.</p></article>
+          <article class="card"><h3>Implementador</h3><p>Constrói o que foi combinado em passos pequenos. Executa verificações e relata resultados e limites.</p></article>
+          <article class="card"><h3>Revisor</h3><p>Examina a entrega com independência. Confere os critérios de aceite e aponta ajustes antes da integração.</p></article>
+        </div>
+        <h3 class="flow-title">Da intenção ao registro</h3>
+        <ol class="flow"><li>Planejar</li><li>Delegar</li><li>Implementar</li><li>Revisar</li><li>Integrar</li><li>Registrar</li></ol>
+      </div>
+    </section>
+    <section id="contato" class="section container contact">
+      <div><h2>Vamos ensaiar uma conversa?</h2><p>Experimente o formulário com dados fictícios. A validação acontece neste navegador; nenhuma mensagem é enviada ou armazenada.</p><p>Todos os campos são obrigatórios.</p></div>
+      <form id="contact-form" aria-label="Contato demonstrativo">
+        <noscript><p>Ative o JavaScript para experimentar a validação local. O botão permanece desativado para evitar envio.</p></noscript>
+        <div class="field"><label for="name">Nome</label><input id="name" type="text" required maxlength="100" autocomplete="off" aria-describedby="name-error"><p class="error" aria-live="polite" id="name-error"></p></div>
+        <div class="field"><label for="email">E-mail</label><input id="email" type="email" required maxlength="254" autocomplete="off" aria-describedby="email-error"><p class="error" aria-live="polite" id="email-error"></p></div>
+        <div class="field"><label for="message">Mensagem</label><textarea id="message" rows="5" required maxlength="2000" aria-describedby="message-error"></textarea><p class="error" aria-live="polite" id="message-error"></p></div>
+        <button class="button" id="validate-button" type="button" disabled>Validar mensagem</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </form>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><p>Piloto de agentes · <span id="year">2026</span></p><p>Uma experiência local de colaboração.</p></div></footer>
+</body>
+</html>

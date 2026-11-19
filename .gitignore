@@ -1,0 +1,12 @@
+.env*
+.git-credentials
+*.pem
+*.key
+.venv/
+__pycache__/
+.maestri/
+backups/
+*.wav
+*.mp4
+vault/inbox/whatsapp/**
+!vault/inbox/whatsapp/README.md
